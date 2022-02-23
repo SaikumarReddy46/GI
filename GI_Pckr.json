@@ -1,0 +1,79 @@
+{
+    "builders": [
+
+        {
+
+            "type": "azure-arm",
+
+ 
+
+            "client_id": "f8aa5f4b-615b-46dc-8538-9626294a7d19",
+            "client_secret": "2Yv7Q~hIjFYXUKpnwKGvdi~Rz146al1fXoOAl",
+            "tenant_id": "57a05638-7606-4e30-8662-135f1967a8d0",
+            "subscription_id": "f2a62f2c-86fc-4221-b813-cd041ddbf8e5",
+
+            "managed_image_resource_group_name": "GI_RG",
+            "managed_image_name": "GI_VM",
+            "build_resource_group_name": "GI_RG",
+
+            "virtual_network_name": "GI_VNET",
+            "virtual_network_subnet_name": "GI_Subnet",
+            "virtual_network_resource_group_name": "VNET_RG",
+            "private_virtual_network_with_public_ip": "true",
+
+ 
+
+            "os_type": "Linux",
+
+            "os_disk_size_gb": "65",
+
+            "disk_additional_size": "256",
+
+            "image_publisher": "RedHat",
+
+            "image_offer": "RHEL",
+
+            "image_sku": "7.7",
+
+ 
+
+            "azure_tags": {
+
+                "ENV": "test",
+
+                "application": "publish",
+
+                "image": "GI_VM_POC"
+
+            },
+
+ 
+
+            "vm_size": "Standard_E2_v3",
+
+            "custom_resource_build_prefix": "gipoc",
+
+ 
+
+            "communicator": "ssh",
+
+            "ssh_timeout": "1m"
+
+        }
+
+    ],
+
+    "provisioners":[
+        {
+    "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
+    "inline": [
+      "yum update",
+
+      "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
+    ],
+    "inline_shebang": "/bin/sh -x",
+    "type": "shell"
+  }
+  ]
+
+}
