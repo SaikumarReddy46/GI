@@ -22,9 +22,9 @@
 
             "os_type": "Linux",
 
-            "os_disk_size_gb": "65",
+            "os_disk_size_gb": "70",
 
-            "disk_additional_size": "256",
+            "disk_additional_size": "128",
 
             "image_publisher": "RedHat",
 
@@ -46,7 +46,7 @@
 
             "vm_size": "Standard_E2_v3",
 
-            "custom_resource_build_prefix": "gipoc",
+            "custom_resource_build_prefix": "gipocjen",
 
             "communicator": "ssh",
 
