@@ -13,7 +13,7 @@
             "subscription_id": "f2a62f2c-86fc-4221-b813-cd041ddbf8e5",
 
             "managed_image_resource_group_name": "GI_RG",
-            "managed_image_name": "GI_VM",
+            "managed_image_name": "GI_VM_Jen",
             "build_resource_group_name": "GI_RG",
 
             "virtual_network_name": "GI_VNET",
@@ -51,7 +51,7 @@
 
             "vm_size": "Standard_E2_v3",
 
-            "custom_resource_build_prefix": "gipoc",
+            "custom_resource_build_prefix": "gipocjen",
 
  
 
