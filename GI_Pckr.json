@@ -34,14 +34,6 @@
             "managed_image_name": "GI_Jen",
             
             
-	     "shared_image_gallery_destination": {
-                "resource_group": "GI_RG",
-                "gallery_name": "web_app",
-                "image_name": "Jen",
-                "image_version": "1.0.0",
-                "replication_regions": "eastus"
-              },
-            
             "azure_tags": {
 
                 "ENV": "test",
