@@ -31,7 +31,7 @@
             "image_sku": "7.7",
  
             "managed_image_resource_group_name": "GI_RG",
-            "managed_image_name": "GI_Jen",
+            "managed_image_name": "jen_gi",
             
             
             "azure_tags": {
