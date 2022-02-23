@@ -42,7 +42,7 @@
               },
             
             "managed_image_resource_group_name": "GI_RG",
-            "managed_image_name": "GI_VM_Jen",
+            "managed_image_name": "GI_Jen",
             
             "azure_tags": {
 
