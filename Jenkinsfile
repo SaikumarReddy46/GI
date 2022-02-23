@@ -6,8 +6,8 @@ pipeline {
               sh """
               #!/bin/bash
               packer init .
-              packer validate 
-              packer build -force .
+              packer validate GI_Pckr.json
+              packer build GI_Pckr.json
               """
             }
         }
