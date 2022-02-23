@@ -1,4 +1,7 @@
 {
+      "variables": {
+        "image_version": "1.0.0"
+    },
     "builders": [
 
         {
@@ -29,6 +32,14 @@
             "image_offer": "RHEL",
 
             "image_sku": "7.7",
+            
+            "shared_image_gallery_destination": {
+                "resource_group": "SIG",
+                "gallery_name": "SIG_GI",
+                "image_name": "GI_VM_Jen",
+                "image_version": "{{user `image_version`}}",
+                "replication_regions": "eastus"
+              },
             
             "managed_image_resource_group_name": "GI_RG",
             "managed_image_name": "GI_VM_Jen",
