@@ -36,7 +36,7 @@
             "shared_image_gallery_destination": {
                 "resource_group": "SIG",
                 "gallery_name": "SIG_GI",
-                "image_name": "GI_VM_Jen",
+                "image_name": "GI_Jen",
                 "image_version": "{{user `image_version`}}",
                 "replication_regions": "eastus"
               },
