@@ -39,6 +39,7 @@
 
             "managed_image_resource_group_name": "GI_RG",
             "managed_image_name": "GI_VM_JEN",
+            "custom_resource_build_prefix": "gipoc",
 
             "os_type": "Linux",
 
