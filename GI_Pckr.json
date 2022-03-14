@@ -22,22 +22,22 @@
 
             "image_sku": "7.7",
             
-            "build_resource_group_name": "GI_RG",
+            "build_resource_group_name": "TF_RG",
 
-            "virtual_network_name": "GI_VNET",
-            "virtual_network_subnet_name": "GI_Subnet",
-            "virtual_network_resource_group_name": "VNET_RG",
+            "virtual_network_name": "TF_RG-vnet",
+            "virtual_network_subnet_name": "default",
+            "virtual_network_resource_group_name": "TF_RG",
             "private_virtual_network_with_public_ip": "true",
 
             "shared_image_gallery_destination": {
-                "resource_group": "GI_RG",
-                "gallery_name": "jen_galry",
-                "image_name": "JEN_VM",
-                "image_version": "1.0.2",
+                "resource_group": "TF_RG",
+                "gallery_name": "vm_galry",
+                "image_name": "JEN_VMS",
+                "image_version": "1.0.0",
                 "replication_regions": "northeurope"
             },
 
-            "managed_image_resource_group_name": "GI_RG",
+            "managed_image_resource_group_name": "TF_RG",
             "managed_image_name": "GI_VM_JEN",
             "custom_resource_build_prefix": "gipoc",
 
