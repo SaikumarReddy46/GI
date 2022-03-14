@@ -39,7 +39,7 @@
 
             "managed_image_resource_group_name": "TF_RG",
             "managed_image_name": "GI_VM_JEN",
-            "custom_resource_build_prefix": "gipoc",
+            "custom_resource_build_prefix": "gipocnw",
 
             "os_type": "Linux",
 
